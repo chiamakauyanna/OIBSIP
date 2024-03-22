@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Pacifico&display=swap');
+
+ *{
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(211, 210, 203);
+  margin: 0;
+  background-color: black;
+}
+
+#title{
+  text-align: center;
+  padding-top: 1.3em;
+  margin-bottom: 0;
+  font-size: 2.3em;
+  color: bisque;
+}
+
+#description{
+ margin-top: 0.5em;
+ color: rgb(211, 210, 203);
+}
+
+img{
+display: block;
+max-width: 100%;
+margin: auto;
+
+}
+@media(min-width:1000px){
+  img{
+    width: 70%;
+  }
+}
+
+#img-div{
+  padding: 0.7em;
+}
+
+#img-caption{
+  text-align: center;
+  margin: 1em  auto;
+  width: 70vw;
+}
+
+#tribute-info{
+  width:80vw;
+  margin: auto;
+
+}
+@media(min-width:750px){
+  #tribute-info{
+    width:50vw;
+  }
+
+  #tribute-summary{
+    width:50vw;
+  }
+}
+
+h3{
+  padding-top: 1em;
+  font-size: 1.5em;
+  color: bisque;
+}
+
+#first-border, #second-border {
+  border-bottom: 2px solid;
+  margin: auto;
+  width: 70vw;
+}
+
+#second-border{
+  color: black;
+}
+
+span{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: bisque;
+}
+
+ul li{
+  list-style: none;
+  margin-top: 1em;
+  padding-left: 1em;
+  text-align: left;
+}
+
+#summary{
+  padding-top: 2.5em;
+  padding-bottom: 2em;
+  width: 80vw;
+  text-align: center;
+  margin: auto;
+  color: rgb(83, 35, 35);
+}
+
+a{
+  color: rgb(87, 36, 38);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover{
+  color: brown;
+}
+
+#wiki{
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-size: 1.2em ;
+  width: 80vw;
+  margin: auto;
+  color: rgb(108, 90, 91);
+}
+
+#tribute-summary{
+  background-color:bisque; 
+  position: absolute;
+  width: 100vw;
+}
