@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Home Page</title>
+</head> 
+<body>
+  <div class="home-container">
+   <div class="nav-container">
+    <div class="menuNav">
+      <div id="myLinks">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+      </div>
+      <a href="#" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+   </div>
+
+    <div class="content-container">
+      <p>Welcome to this secure page</p>
+      <div class="logout-btn">
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="logout.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>

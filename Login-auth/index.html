@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <div class="container">    
+    <div id="signup-container">
+      <div class="text-container">
+        <p class="heading">Glad to see you!</p>
+        <p class="sub-heading">Create an Account.</p>
+      </div>
+      <div class="form-container">
+        <h2>Sign Up</h2>
+        <p class="success"></p>
+        <form id="signup-form">
+          <div class="input-field">
+            <i class="fas fa-user"></i> 
+            <input type="text" name="username" id="username" placeholder="Username">     
+          </div>
+          <div class="error" id="username-error"></div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i> 
+            <input type="email" name="email" id="email" placeholder="Email address">  
+          </div>
+          <div class="error" id="email-error"></div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i> 
+            <input type="password" name="password" id="password" placeholder="Password">
+          </div>
+          <div class="error" id="password-error"></div>
+          <button type="submit" id="signup-btn">Sign up</button>
+        </form>
+        <p class="link">Have an account? <a href="#" onclick="toggleForm('login')">Sign in.</a></p>
+      </div>
+    </div>
+  
+    <div id="login-container" style="display: none;">
+      <div class="text-container">
+        <p class="heading">Welcome!</p>
+        <p class="sub-heading">Enter your credentials.</p>
+      </div>
+      <div class="form-container">
+        <h2>Sign in</h2>
+        <form id="login-form">
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" name="username" id="login-username" placeholder="Username">
+          </div>  
+         <div class="error" id="login-username-error"></div> 
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" id="login-password" placeholder="Password"> 
+          </div>
+          <div class="error" id="login-password-error"></div>
+          <button type="submit" id="login-btn">Sign in</button>
+        </form>
+        <p class="link">Don't have an account? <a href="#" onclick="toggleForm('signup')">Sign Up.</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script>
+    function toggleForm(formType) {
+  if (formType === 'signup') {
+    document.getElementById('signup-container').style.display = 'flex';
+    document.getElementById('login-container').style.display = 'none';
+  } else if (formType === 'login') {
+    document.getElementById('signup-container').style.display = 'none';
+    document.getElementById('login-container').style.display = 'flex';
+  }
+}
+
+  </script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex; 
+  height: 100vh;
+  width: 100vw;
+}
+
+#signup-container,
+#login-container {
+  display: flex;
+}
+
+.text-container {
+ width: 60vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: rgba(19, 19, 199, 0.822);
+ color: white;
+ font-size: 2em;
+}
+
+.form-container {
+  width: 40vw ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.sub-heading{
+  font-size: 1em;
+  text-align: center;
+}
+
+.success{
+  color: green;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.error{
+  color: red;
+  width: 240px;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+input{
+  padding: .9em;
+  margin: .5em auto;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid;
+  outline: none; /* Remove the highlight border */
+  transition: all 0.3s ease-in-out;
+}
+
+/* INPUT FIELDS */
+
+.input-field {
+  position: relative;
+  margin-bottom: 2px;
+  width: 250PX;
+}
+
+.input-field i {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.input-field input {
+  padding-left: 30px;
+  width: calc(100% - 40px); /* Adjust based on icon width and padding */
+}
+
+/* BUTTONS STYLING */
+
+button{
+  width:  220px;
+  padding: .5em;
+  background-color: rgba(19, 19, 199, 0.822);
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgba(19, 133, 199, 0.822);
+}
+
+/* LINK STYLING*/
+
+.link a {
+  color: rgba(19, 19, 199, 0.822);
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+/* SECURE PAGE STYLING */
+
+.home-container{
+  background-image: url('welcome\ bg.jpg');
+  background-size: cover; /* This property ensures that the background image covers the entire container */
+  background-repeat: no-repeat; /* This property prevents the background image from repeating */
+  background-position: center; /* This property centers the background image */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 15em;
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+.home-container p{
+  font-size: 3em;
+  margin-bottom: .5em;
+  color: white;
+  font-weight: bold;
+}
+
+.home-container a{
+  color: white;
+  text-decoration: none;
+}
+
+
+#logoutBtn{
+  margin-top: .3em;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: end;
+  margin-right: 2em;
+  color: white;
+}
+
+.MenuNav {
+  overflow: hidden;
+  position: relative;
+}
+
+.menuNav #myLinks {
+  display: none;
+}
+
+.menuNav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.menuNav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menuNav a:hover {
+  background-color: #fff;
+  color: black;
+}
+
